@@ -23,7 +23,7 @@ export default async function BlockShowPage({ params }: any) {
     }
 
     return (
-        <div>
+        <div className="flex-col h-screen p-4">
             <div className="flex justify-between items-center p-2 border rounded">
                 <h1>{currentBlock?.title}</h1>
                 <div className="flex justify-between p-2 gap-1">
@@ -36,7 +36,8 @@ export default async function BlockShowPage({ params }: any) {
                     </form>
                 </div>
             </div>
-            <div className="border rounded h-[50%]">
+            <h2 className="p-4">Code:</h2>
+            <div className="border rounded h-1/2 p-4">
                 {currentBlock?.code}
             </div>
         </div>
