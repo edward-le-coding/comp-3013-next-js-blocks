@@ -1,6 +1,7 @@
 import {db} from "@/db";
 import {redirect} from "next/navigation";
 export default function BlockCreatePage() {
+    
     async function createBlock(formData: FormData){
         // Mark this function as a SERVER ACTION
         "use server"
